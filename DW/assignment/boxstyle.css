@@ -1,0 +1,260 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #495E7D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    background-image: -webkit-linear-gradient(270deg,rgba(42,41,176,1.00) 0%,rgba(100,99,218,1.00) 0%,rgba(8,11,29,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(42,41,176,1.00) 0%,rgba(100,99,218,1.00) 0%,rgba(8,11,29,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(42,41,176,1.00) 0%,rgba(100,99,218,1.00) 0%,rgba(8,11,29,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(42,41,176,1.00) 0%,rgba(100,99,218,1.00) 0%,rgba(8,11,29,1.00) 100.00%);
+}
+main a:link, 
+main a:visited {
+  color: #C41E20;
+  text-decoration: none;
+}
+main a:hover {
+  color: #2528C2;
+ text-decoration: none;
+}
+main a:active {
+  color: #0FF01E;
+  text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  margin: 0.5em 0 0.3em;
+}
+h1 {
+  font-size: 36px
+}
+h2 {
+  font-size: 30px
+}
+h3 {
+  font-size: 26px
+}
+h4 {
+  font-size: 24px
+}
+h5 {
+  font-size: 20px
+}
+h6 {
+  font-size: 18px
+}
+#wrapper {
+  margin: 20px auto;
+  background: #DFDFDC;
+  width: 960px;
+  padding: 15px;
+}
+header {
+  background: #2C2C6F;
+  margin: 0 0 10px 0;
+  text-align: center;
+  padding: 10px;
+  overflow: hidden;
+    animation: header-change infinite 10s;
+}
+
+@keyframes header-change {
+    0% {
+        background: #2C2C6F;  
+    }
+    30% {
+        background: #3C3CA3;  
+    }
+    50% {
+        background: #0D1D4F;  
+    }
+    70% {
+        background: #1B6021;  
+    }
+    100% {
+        background: #053C19;  
+    }
+}
+#free_logo img {
+  width: 160px;
+  float: left;
+  margin: 0px;
+    
+}
+#slogan {
+  float: right;
+  font-style: italic;
+  color: #ffff;
+  font-size: 22px;
+}
+#slogan p {
+  margin: 10px 0 0 0;
+}
+article h2 {
+  background: #7B7979;
+  padding: 5px 10px;
+}
+
+nav {
+  background: #272525;
+  height: 40px;
+  margin: 0 0 10px 0;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+  
+}
+nav ul li  {
+    display: inline-block;
+    position: relative;
+}
+nav ul li a {
+  padding: 10px 8px;
+  height: 20px;
+  line-height: 20px;
+  display: block;
+  text-decoration: none;
+    transition: 1s all ease;
+}
+
+nav ul li a:link,
+nav ul li a:visited{
+    color: #F3F3F3;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #211616;
+    background: #3427A3;
+    
+}
+nav ul li a:active{
+    color: #333;
+    text-decoration: none;
+    background: #B0272A;
+}
+
+nav .subli {
+    background: #0D0E45;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100px;
+    display: none;
+}
+
+nav .subli li {
+    display: block;
+}
+
+nav ul li:hover .subli{
+    display: block;
+}
+
+.social {
+    float: right;
+    margin: 0;
+    padding: 4px 8px;
+    color: #FFFFF;
+    font-size: 22px; 
+}
+
+
+.social a:link,
+.social a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+      
+}
+
+.social a:hover {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.social a:active {
+    color: #F02020;
+    text-decoration: none;
+}
+
+
+main {
+  width: 700px;
+  float: left;
+  margin: 0 0 10px 0;
+}
+main img {
+  width: 700px;
+}
+aside {
+  width: 240px;
+  margin: 0 0 10px 0;
+  float: right;
+}
+aside img {
+  width: 250px;
+}
+
+.codearia {
+    float: left;
+    margin: 5px 10px 4px;
+    padding: 5px;
+    border: 1px solid rgba(0,0,0,1.00);
+}
+
+.codearia img {
+    width: 300px;
+}
+.codearia p {
+    margin: 0 0 10px 0;
+}
+
+table td, th {
+    border: 1px solid rgba(0,0,0,1.00);
+    border-collapse: collapse;
+    padding: 5px;
+}
+th {
+    background: rgba(148,144,144,0.97);
+}
+td {
+    background: rgba(143,175,81,1.00);
+    color: rgba(243,242,242,1.00);
+}
+
+#contactform input[type="text"],
+#contactform textarea {
+    border: 1px solid #367D30;
+    padding: 10px;
+    width: 300px;
+}
+
+#contactform input[type="submit"],
+#contactform input[type="reset"]
+{
+    background: #B51518;
+    color: #BF8384;
+    padding: 10px;
+    border: none;
+}
+
+
+#animation {
+    
+}
+
+footer {
+  font-size: 12px;
+  padding: 5px;
+  text-align: center;
+  color: #FFEFEF;
+  background: #000000;
+  clear: both;
+  height: 40px;
+}
